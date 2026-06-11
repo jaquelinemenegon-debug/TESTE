@@ -1,26 +1,26 @@
-// Captura os botões
+// Capturando elementos de ajuste
 const btnIncrease = document.getElementById('btn-increase');
 const btnDecrease = document.getElementById('btn-decrease');
 const btnContrast = document.getElementById('btn-contrast');
 
-// Controle de tamanho da fonte
-let currentFontSize = 100; // Porcentagem
+// Controle do tamanho da fonte padrão base (em %)
+let currentSizePercent = 100;
 
 btnIncrease.addEventListener('click', () => {
-    if (currentFontSize < 150) { // Limite máximo
-        currentFontSize += 10;
-        document.body.style.fontSize = currentFontSize + '%';
+    if (currentSizePercent < 140) { // Limite superior para evitar quebrar o layout
+        currentSizePercent += 10;
+        document.documentElement.style.setProperty('--base-font-size', currentSizePercent + '%');
     }
 });
 
 btnDecrease.addEventListener('click', () => {
-    if (currentFontSize > 80) { // Limite mínimo
-        currentFontSize -= 10;
-        document.body.style.fontSize = currentFontSize + '%';
+    if (currentSizePercent > 85) { // Limite inferior
+        currentSizePercent -= 10;
+        document.documentElement.style.setProperty('--base-font-size', currentSizePercent + '%');
     }
 });
 
-// Controle do modo de contraste (tema escuro/acessibilidade)
+// Alternância do tema de contraste / cor
 btnContrast.addEventListener('click', () => {
     document.body.classList.toggle('contrast-mode');
 });
