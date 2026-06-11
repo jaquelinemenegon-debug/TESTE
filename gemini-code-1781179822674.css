@@ -1,0 +1,245 @@
+/* Variáveis de Cores (Tons de Verde) */
+:root {
+    --green-very-dark: #003314;
+    --green-dark: #1b5e20;
+    --green-main: #4caf50;
+    --green-light: #a5d6a7;
+    --green-bg: #e8f5e9;
+    --text-color: #333333;
+    --bg-color: #ffffff;
+    --base-size: 16px;
+}
+
+/* Modo Alto Contraste / Noturno (ativado pelo JS) */
+body.contrast-mode {
+    --green-very-dark: #000000;
+    --green-dark: #000000;
+    --green-main: #66bb6a;
+    --green-light: #2e7d32;
+    --green-bg: #121212;
+    --text-color: #f1f1f1;
+    --bg-color: #1e1e1e;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--base-size);
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Painel de Acessibilidade */
+.accessibility-panel {
+    background-color: var(--green-very-dark);
+    color: white;
+    padding: 10px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.accessibility-panel button {
+    background-color: var(--green-main);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.accessibility-panel button:hover {
+    background-color: var(--green-light);
+    color: var(--green-very-dark);
+}
+
+/* Cabeçalho e Navegação */
+header {
+    background-color: var(--green-dark);
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--green-light);
+}
+
+/* Hero Section (Imagem Grande) */
+.hero {
+    background: linear-gradient(rgba(27, 94, 32, 0.7), rgba(0, 51, 20, 0.8)), url('https://images.unsplash.com/photo-1592982537447-6f2ecddb5760?auto=format&fit=crop&w=1920&q=80') center/cover;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seções Gerais */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--green-bg);
+}
+
+/* Split Content (Imagem ao lado de Texto) */
+.content-split {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.content-split img {
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Cards de Ações Sustentáveis */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: var(--green-dark);
+    padding: 15px 15px 5px;
+}
+
+.card p {
+    padding: 0 15px 20px;
+}
+
+/* Relatórios */
+.report-list {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.report-list li {
+    background-color: var(--green-bg);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 5px solid var(--green-main);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-download {
+    display: inline-block;
+    background-color: var(--green-main);
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    align-self: flex-start;
+    font-weight: bold;
+}
+
+.btn-download:hover {
+    background-color: var(--green-dark);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--green-very-dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Responsividade para Celulares e Tablets */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .content-split {
+        flex-direction: column;
+    }
+    .content-split img {
+        width: 100%;
+    }
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+}
