@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lexend:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="accessibility-panel">
-        <span>Ajustes:</span>
-        <button id="btn-increase">A+</button>
-        <button id="btn-decrease">A-</button>
-        <button id="btn-contrast">Contraste / Cor</button>
+        <span>Ajustes de Acessibilidade:</span>
+        <button id="btn-increase" title="Aumentar Texto">A+</button>
+        <button id="btn-decrease" title="Diminuir Texto">A-</button>
+        <button id="btn-contrast" title="Alternar Contraste / Cor">Alternar Cor</button>
     </div>
 
     <header>
-        <div class="container">
-            <h1>AgroSustentável BR</h1>
+        <div class="container header-flex">
+            <h1>AgroSustentável <span>BR</span></h1>
             <nav>
                 <ul>
-                    <li><a href="#sobre">Sobre o Equilíbrio</a></li>
-                    <li><a href="#acoes">Ações Sustentáveis</a></li>
+                    <li><a href="#sobre">O Equilíbrio</a></li>
+                    <li><a href="#acoes">Ações</a></li>
+                    <li><a href="#rendimento">Rendimento</a></li>
+                    <li><a href="#dicas">Dicas</a></li>
                     <li><a href="#relatorios">Relatórios</a></li>
                 </ul>
             </nav>
@@ -30,62 +35,130 @@
     <section class="hero">
         <div class="hero-content">
             <h2>Agro Forte, Futuro Sustentável</h2>
-            <p>O equilíbrio perfeito entre a alta produção agrícola e a preservação do meio ambiente no Brasil.</p>
+            <p>Alcançando a máxima eficiência produtiva nas lavouras brasileiras em perfeita harmonia com as nossas florestas e biomas nativos.</p>
         </div>
     </section>
 
     <section id="sobre" class="container section">
-        <h2>O Desafio do Equilíbrio</h2>
         <div class="content-split">
-            <div class="text">
-                <p>O Brasil é um dos maiores produtores de alimentos do mundo. No entanto, o verdadeiro sucesso do nosso agronegócio no século XXI não se mede apenas pela quantidade produzida, mas por <strong>como</strong> produzimos. Garantir a segurança alimentar global e proteger nossos biomas (como a Amazônia e o Cerrado) não são objetivos opostos, mas sim complementares.</p>
+            <div class="text-block">
+                <span class="tag">Conceito Central</span>
+                <h2>Alimentar o Mundo e Proteger a Natureza</h2>
+                <p>O Brasil lidera a produção de alimentos global. O grande marco do agronegócio moderno é provar que o crescimento econômico do campo não necessita de novas áreas de desmatamento. O segredo reside em otimizar as terras que já possuímos, regenerando pastagens e aplicando ciência de ponta.</p>
+                <p>O equilíbrio verde protege os ciclos de chuva, essenciais para o próprio agricultor, criando uma rede de sustentabilidade viva no país.</p>
             </div>
-            <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80" alt="Plantação verde e saudável">
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=800&q=80" alt="Tecnologia e folhas verdes no campo">
+            </div>
         </div>
     </section>
 
     <section id="acoes" class="bg-light section">
         <div class="container">
-            <h2>Mudanças e Ações Sustentáveis</h2>
+            <div class="section-header">
+                <h2>Pilares da Mudança</h2>
+                <p>Técnicas consolidadas que unem alta performance agrícola com conservação ambiental.</p>
+            </div>
             <div class="grid">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=500&q=80" alt="Integração">
-                    <h3>ILPF</h3>
-                    <p>A Integração Lavoura-Pecuária-Floresta otimiza o uso da terra, reduz a emissão de gases e recupera pastagens degradadas.</p>
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=500&q=80" alt="Gado em área florestal">
+                    <h3>ILPF (Integração)</h3>
+                    <p>Une lavoura, pecuária e floresta numa mesma área. Melhora o conforto do gado, sequestra carbono e diversifica a renda do produtor.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=500&q=80" alt="Solo">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=500&q=80" alt="Solo protegido por palha">
                     <h3>Plantio Direto</h3>
-                    <p>Técnica que evita o revolvimento do solo, mantendo a palhada da colheita anterior. Isso retém água e evita a erosão.</p>
+                    <p>Sem arar o solo. A terra fica protegida por restos biológicos da colheita anterior, economizando água e evitando poeira e erosões severas.</p>
                 </div>
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1530836369250-ef71a3f5e4bf?auto=format&fit=crop&w=500&q=80" alt="Tecnologia">
-                    <h3>Bioinsumos e Tecnologia</h3>
-                    <p>Uso de defensivos biológicos e agricultura de precisão (drones, sensores) para reduzir o uso de produtos químicos.</p>
+                    <img src="https://images.unsplash.com/photo-1530836369250-ef71a3f5e4bf?auto=format&fit=crop&w=500&q=80" alt="Bioinsumos em laboratório">
+                    <h3>Bioinsumos</h3>
+                    <p>Substituição de compostos químicos pesados por inimigos naturais e bactérias benéficas que fortalecem as raízes naturalmente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rendimento" class="container section">
+        <div class="content-split reverse">
+            <div class="text-block">
+                <span class="tag">Produtividade</span>
+                <h2>Sustentabilidade que Gera Lucro e Rendimento</h2>
+                <p>Muitos acreditam que preservar reduz o lucro, mas os dados provam o contrário. A eficiência no uso de recursos aumenta drasticamente o rendimento por hectare (sacos de grãos ou arrobas por espaço territorial).</p>
+                <p><strong>A ciência do rendimento sustentável baseia-se em:</strong></p>
+                <ul class="custom-list">
+                    <li><strong>Agricultura de Precisão:</strong> Sensores e drones que aplicam fertilizantes no ponto exato, evitando desperdício de insumos caros.</li>
+                    <li><strong>Rotação Inteligente:</strong> Alternar soja com milho ou braquiária quebra ciclos de pragas e enriquece os nutrientes da terra sem fertilizantes sintéticos adicionais.</li>
+                    <li><strong>Genética Adaptada:</strong> Sementes resistentes à seca severa garantem colheitas mesmo sob as variações climáticas atuais.</li>
+                </ul>
+            </div>
+            <div class="img-wrapper">
+                <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=800&q=80" alt="Drone mapeando plantações brasileiras">
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas" class="bg-dark-green section text-white">
+        <div class="container">
+            <div class="section-header">
+                <h2>Como Preservar o Meio Ambiente?</h2>
+                <p>Diretrizes essenciais para produtores rurais, estudantes e defensores da natureza.</p>
+            </div>
+            <div class="dicas-container">
+                <div class="dica-item">
+                    <h4>1. Respeitar as APPs e Reservas Legais</h4>
+                    <p>Manter matas ciliares ao redor de rios e nascentes preservadas garante o fornecimento contínuo de água limpa para a própria fazenda.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>2. Combate Rigoroso a Queimadas</h4>
+                    <p>O uso do fogo empobrece o solo e mata microrganismos vitais. Prefira o manejo mecânico ou biológico de restos vegetais.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>3. Captação de Água da Chuva</h4>
+                    <p>A instalação de cisternas agrícolas e bacias de contenção ajuda a recarregar lençóis freáticos e serve para irrigação de emergência.</p>
+                </div>
+                <div class="dica-item">
+                    <h4>4. Conservação de Polinizadores</h4>
+                    <p>Proteger matas nativas próximas atrai abelhas selvagens, responsáveis pelo aumento direto do rendimento de culturas como café e soja.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="relatorios" class="container section">
-        <h2>Relatórios e Dados</h2>
-        <p>Acompanhe os números que mostram que é possível crescer preservando.</p>
-        <ul class="report-list">
-            <li>
-                <strong>Relatório de Sustentabilidade Agro 2025</strong>
-                <span>Resumo das metas de desmatamento zero atingidas pelo setor produtivo.</span>
-                <a href="#" class="btn-download">Baixar PDF</a>
-            </li>
-            <li>
-                <strong>Impacto da Fixação Biológica de Nitrogênio</strong>
-                <span>Como o Brasil economiza bilhões e evita poluição usando bactérias do bem na soja.</span>
-                <a href="#" class="btn-download">Baixar PDF</a>
-            </li>
-        </ul>
+        <div class="section-header">
+            <h2>Relatórios Técnicos Oficiais</h2>
+            <p>Baixe as análises aprofundadas. Nota: para que os arquivos abram, salve os seus documentos PDFs dentro do seu GitHub com os mesmos nomes listados abaixo.</p>
+        </div>
+        <div class="report-box">
+            <div class="report-card">
+                <div>
+                    <h4>Relatório Anual de Sustentabilidade Agro 2025</h4>
+                    <p>Dados consolidados sobre o combate ao desmatamento ilegal e adoção de práticas regenerativas no Brasil.</p>
+                </div>
+                <a href="relatorio2025.pdf" target="_blank" class="btn-download">Visualizar PDF</a>
+            </div>
+            <div class="report-card">
+                <div>
+                    <h4>Estudo de Caso: Rendimento e Lucratividade com ILPF</h4>
+                    <p>Gráficos demonstrando o aumento real de receita por hectare ao consorciar floresta e pecuária no Cerrado.</p>
+                </div>
+                <a href="estudo-ilpf.pdf" target="_blank" class="btn-download">Visualizar PDF</a>
+            </div>
+            <div class="report-card">
+                <div>
+                    <h4>Manual Técnico de Bioinsumos Nacionais</h4>
+                    <p>Instruções práticas para a produção e aplicação de microrganismos eficientes no controle de pragas agrícolas.</p>
+                </div>
+                <a href="manual-bioinsumos.pdf" target="_blank" class="btn-download">Visualizar PDF</a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 AgroSustentável BR. Criado para um futuro verde.</p>
+        <div class="container">
+            <p>&copy; 2026 AgroSustentável BR. Desenvolvimento de tecnologia para um futuro verde no Brasil.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
